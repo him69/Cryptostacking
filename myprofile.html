@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .iteam {
+            display: none;
+        }
+
+        .iteam.active-border {
+            display: block;
+        }
+
+        .before::after {
+            content: "|";
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white">
+    <div class="d-flex  justify-content-between container bg-dark sticky-top">
+        <div class=" m-2 ">
+            <img src="./images/logo_1.png" class="rounded-circle  fix-size" alt="">
+        </div>
+        <div class="text-white fs-1"><i class="bi bi-list menu"></i></div>
+    </div>
+
+    <div class="mx-4">
+        <p class="fs-4" onclick="history.back()"><i class="bi bi-caret-left-fill"></i>
+            <span class="fs-6"> Back</span> </p>
+        
+    </div>
+        <!-- ///////////////////////////////////////////// -->
+    <div class="d-flex bg-dark border-0 align-items-center">
+        <img src="./images/creatore.jpg" class=" mx-3    rounded-circle" alt="..." height="70px" width="70px">
+        <div class="w-75">
+            <p class="m-0"> <span>Name :</span> himanshu</p>
+            <p class="m-0"> <span>Email :</span> Youremail@gmail.com</p>
+            <p class=""> <span>Number :</span> 9056XXXX</p>
+        </div>
+    </div>
+    <div>
+        <p class="fs-3 fw-bold px-3">About Me</p>
+        <p class="p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere ducimus voluptatem
+            iste ad excepturi dignissimos aut suscipit vitae? Voluptates, esse! Praesentium ipsa in, id aut voluptates
+            molestiae eos atque?</p>
+    </div>
+    <div class="container">
+        <div class="d-flex
+">
+            <div class=" itemconatin  active-border w-50" data-role="tab" data-target="#one">
+                <p class="text-center">My Watchlist</p>
+            </div>
+            <div style="    transform: rotate(318deg);">
+                <i class="bi bi-slash-lg fs-1"></i>
+            </div>
+            <div class=" itemconatin  w-50" data-role="tab" data-target="#second">
+                <p class="text-center">My Vids</p>
+            </div>
+
+        </div>
+        <div class="item-content ">
+            <div class="iteam active-border fs-1 mt-4" id="one">
+               
+        
+                    <div class="p-2 vids-he ">
+                        
+                       <a href="./productdetail.html"> <img src="./thumbs links/5/5.jpeg" width="100%" alt=""></a>
+                        <div class="d-flex justify-content-between my-2">
+                            <p class="fs-4 fw-bold m-0"> The courrupt head serves wrong...</p>
+                            
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <div class="">
+                                <p class="m-0 fs-6"><i class="bi bi-clock-fill"></i> 6 month ago</p>
+                                <p class="m-0 fs-6"><i class="bi bi-eye-fill"></i> 6.5 M</p>
+                            </div>
+                            <div>
+                                <span>00:</span>
+                                <span>00:</span>
+                                <span>01:</span>
+                                <span>34</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="p-2 vids-he ">
+                       
+                        <a href="./productdetail.html"> <img src="./thumbs links/6/6.jpeg" width="100%" alt=""></a>
+                        <div class="d-flex justify-content-between my-2">
+                            <p class="fs-4 fw-bold m-0"> The courrupt head serves wrong...</p>
+                            
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <div class="">
+                                <p class="m-0 fs-6"><i class="bi bi-clock-fill"></i> 6 month ago</p>
+                                <p class="m-0 fs-6"><i class="bi bi-eye-fill"></i> 6.5 M</p>
+                            </div>
+                            <div>
+                                <span>00:</span>
+                                <span>00:</span>
+                                <span>01:</span>
+                                <span>34</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 vids-he ">
+                        
+                        <a href="./productdetail.html"> <img src="./thumbs links/7/7.jpeg" width="100%" alt=""></a>
+                        <div class="d-flex justify-content-between my-2">
+                            <p class="fs-4 m-0 fw-bold"> The courrupt head serves wrong...</p>
+                            
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <div class="">
+                                <p class="m-0 fs-6"><i class="bi bi-clock-fill"></i> 6 month ago</p>
+                                <p class="m-0 fs-6"><i class="bi bi-eye-fill"></i> 6.5 M</p>
+                            </div>
+                            <div>
+                                <span>00:</span>
+                                <span>00:</span>
+                                <span>01:</span>
+                                <span>34</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //////////////////////////// -->
+                   
+            
+                
+            </div>
+            <div class="iteam mt-4 " id="second">
+                <div class="d-flex">
+
+                
+                <div class="overflow-hidden col-6 p-1 tags"
+                        style="height: 196px; border: 1px solid rgb(67, 67, 67);">
+                        <div class="position-relative  ">
+                            <img src="./thumbs links/5/5.jpeg" height="100px" class="w-100" alt="">
+
+                            <div class="position-absolute position " style="left: 90px;">
+                                <p>05: 00</p>
+                            </div>
+                            <div class="text-center ">
+                                <p>Date of renew <span>12/06/2022</span> </p>
+                            </div>
+                            <div class="text-center pt-2">
+                                <p> <i class="bi bi-download"></i> Downlode now</p>
+                            </div>
+                            <div>
+                                <button class="m-0 order text-white me-3"> Re-bid</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="overflow-hidden col-6 p-1 tags"
+                        style="height: 196px; border: 1px solid rgb(67, 67, 67);">
+                        <div class="position-relative  ">
+                            <img src="./thumbs links/6/6.jpeg" height="100px" class="w-100" alt="">
+
+                            <div class="position-absolute position " style="left: 90px;">
+                                <p>05: 00</p>
+                            </div>
+                            <div class="text-center ">
+                                <p>Date of renew <span>12/06/2022</span> </p>
+                            </div>
+                            <div class="text-center pt-2">
+                                <p> <i class="bi bi-download"></i> Downlode now</p>
+                            </div>
+                            <div>
+                                <button class="m-0 order text-white me-3"> Re-bid</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="user-nav w-100" style=" position: fixed;top: 0px;">
+        <div class="userprofile m-auto">
+            <div class="userimg text-center">
+                <img src="./images/creatore.jpg" alt="">
+                <h5>Purani Dili Talkies</h5>
+            </div>
+            <div class="viewbla">
+                <button class="w-50">View Balance</button>
+                <p>IDNFNF839RNVI3094MNGO3</p>
+            </div>
+            <div class="usernavigation mx-5">
+                <ul class="fs-2 fw-bold ">
+                    <li><a href="#">
+                            <!-- <i class="bi bi-sliders"></i>   -->
+                            Settings
+                        </a></li>
+                    <li><a href="#">
+                            <!-- <i class="bi bi-bell"></i>  -->
+                            Notification
+                        </a></li>
+                    <li class="highlight"><a href="#">
+                            <!-- <ion-icon name="desktop-outline"></ion-icon>  -->
+                            Explore NFT's
+                        </a></li>
+                    <li><a href="#">
+                            <p class="pt-2">
+                               
+                                Find Bids
+                        </a></li>
+                    <li><a href="#">
+                            <!-- <i class="bi bi-info-circle"></i> -->
+                            About
+                        </a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        const switchtab = document.querySelectorAll('[data-role="tab"]'),
+            content = document.querySelectorAll(".iteam");
+
+
+        switchtab.forEach((tab) => {
+            tab.addEventListener("click", () => {
+                const tar = document.querySelector(tab.dataset.target);
+
+                content.forEach((tc) => {
+                    tc.classList.remove("active-border");
+                });
+                tar.classList.add("active-border");
+
+                switchtab.forEach((t) => {
+                    t.classList.remove("active-border");
+                });
+                tab.classList.add("active-border");
+            });
+        });
+
+    </script>
+    <!-- <div class="container fixed-bottom bg-dark botnav d-flex justify-content-around">
+        <div>
+            <a href="./index.html">
+                <p class=""><i class="bi bi-house-door-fill fs-1"></i></p>
+            </a>
+        </div>
+        <div>
+            <a href="./explorecreatore.html">
+                <p>
+                    <i class="bi bi-disc-fill fs-1"></i>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="./nftdetail.html">
+                <p class="pt-2">
+                    <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="30px"
+                        height="30px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+    c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+    c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+    c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+    c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+    c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+    C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:white;" />
+                    </svg>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="./oders.html">
+                <p class="active">
+                    <i class="bi bi-collection-play-fill fs-1"></i>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="./profile.html">
+                <p>
+                    <i class="bi bi-person-circle fs-1"></i>
+                </p>
+            </a>
+        </div>
+
+    </div> -->
+    <script src="./script/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

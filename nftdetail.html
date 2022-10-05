@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product detail page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body class="bg-dark text-white">
+    <style>
+        .tabs {
+            /* background: #fff; */
+            position: relative;
+            /* margin-bottom: 50px; */
+            color: white;
+        }
+
+        .tabs input {
+            margin: 2px;
+
+        }
+
+        .tabs>input,
+        .tabs>span {
+            width: 20%;
+            height: 60px;
+            line-height: 60px;
+            /* position: absolute; */
+            margin: 4px;
+            /* top: 0; */
+        }
+
+        .tabs>input {
+            cursor: pointer;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            position: absolute;
+            z-index: 99;
+        }
+
+        .tabs>span {
+            /* background: #f0f0f0; */
+            border-radius: 0px;
+            padding: 5px;
+            background: linear-gradient(145deg, #252525, #2c2c2c);
+            box-shadow: 5px 5px 13px #1d1d1d,
+                -5px -5px 13px #353535;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .tabs>span i,
+        .tabs>span {
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+        }
+
+        .tabs>input:hover+span {
+            background: rgba(255, 255, 255, .1);
+        }
+
+      
+
+        .tabs>input:checked+span,
+        .tabs>input:hover+span {
+            color: #e91e63;
+        }
+
+       
+
+        .tab-content {
+            padding: 9px 20px 20px;
+            width: 100%;
+            min-height: auto;
+        }
+
+        .tab-content section {
+            width: 100%;
+            display: none;
+        }
+
+        .tab-content section h1 {
+            margin-top: 15px;
+            font-size: 100px;
+            font-weight: 100;
+            text-align: center;
+        }
+
+        #tab-1:checked~.tab-content #tab-item-1 {
+            display: block;
+        }
+
+        #tab-2:checked~.tab-content #tab-item-2 {
+            display: block;
+        }
+
+        #tab-3:checked~.tab-content #tab-item-3 {
+            display: block;
+        }
+
+        #tab-4:checked~.tab-content #tab-item-4 {
+            display: block;
+        }
+
+        #tab-5:checked~.tab-content #tab-item-5 {
+            display: block;
+        }
+
+        
+
+    </style>
+</head>
+
+<body style="">
+    <!-- <div class="d-flex  justify-content-between container bg-dark sticky-top">
+        <div class=" m-2 ">
+            <img src="./images/logo_1.png" class="rounded-circle  fix-size" alt="">
+        </div>
+        <div class="text-white fs-1 menu"><i class="bi bi-list"></i></div>
+    </div> -->
+    <div class="container border-color  p-1 " >
+   
+            <div class="w-100 m-auto text-center my-3 " style="background-color: black;">
+                <img src="./images/gifslider.gif" class=" " alt=""style="    height: 30vh;
+                width: 43vw;" >
+            </div>
+    <div class="pophashtags tags d-flex">
+        <p>#socisl</p>
+        <p>#service</p>
+        <p>#goodforgod</p>
+        
+    </div>
+    
+        
+
+    <div class="revenstu">
+        <p class="fs-3 fw-bold ms-3 m-0" >Revenue structure</>
+        <div class="dt-reven">
+            <div class="border-color">
+                <p class="fs-4 res280">Price in vids</p>
+                <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+                    height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+                </svg> 200</p>
+            </div>
+            <div class="border-color">
+                <p class="fs-4 res280">Price in rupees</p>
+                <p>
+                    <!-- <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+                    height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+                </svg> -->
+               Rs 2M</p>
+            </div>
+            <div class="border-color">
+                <p class="fs-4 res280">Expected Daily Income</p>
+                <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+                    height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+                </svg> 30</p>
+            </div>
+            <div class="border-color">
+                <p class="fs-4 res280">Minimum Bid Price</p>
+                <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+                    height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+                </svg> 3000</p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="bid-val">
+        <span>
+            <h3 id="inccount">+</h3>
+
+        </span> <span id="total-bi" style="color: white;
+        margin: 10px;
+        font-weight: 800;
+        font-size: 23px;"><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px"
+                        height="23px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+    c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+    c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+    c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+    c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+    c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+    C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+                    </svg></span> <span>
+        </span> <span id="total-bid">2000</span> <span>
+            <h3 id="deccount">-</h3>
+        </span>
+
+    </div>
+    <!-- <script>
+        const inccount =document.getElementById('inccount');
+        const dec =document.getElementById('deccount');
+
+        const bid=document.getElementById('total-bid');
+        var count = 0;
+        bid.innerHTML=count
+       
+        inccount=addEventListener('click',function(){
+            count++;
+            bid.innerHTML=count;
+        })
+        dec=addEventListener('click',function(){
+            count--;
+        bid.innerHTML=count;
+        })
+    </script> -->
+    <div class="  w-100 d-flex justify-content-around nft-opt">
+        <div class="eno " style="width: 130px; line-height: 40px;"><a href="./vids.html">Explore Bid</a></div>
+        <div class="s-mbtn  " style="width: 130px; line-height: 40px;"><a href="./nftpurches.html">Buy NFT</a></div>
+    </div>
+    
+    
+
+    </div>
+    <div class="container border-color  p-1 " >
+   
+        <div class="w-100 m-auto text-center my-3 " style="background-color: black;">
+            <img src="./images/slidergif3.gif" class=" " alt=""style="    height: 30vh;
+            width: 43vw;" >
+        </div>
+<div class="pophashtags tags d-flex">
+    <p>#socisl</p>
+    <p>#service</p>
+    <p>#goodforgod</p>
+    
+</div>
+
+    
+
+<div class="revenstu">
+    <p class="fs-3 fw-bold ms-3 m-0" >Revenue structure</p>
+    <div class="dt-reven">
+        <div class="border-color">
+            <p class="fs-4 res280">Price in vids</p>
+            <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+                height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+            </svg> 200</p>
+        </div>
+        <div class="border-color">
+            <p class="fs-4 res280">Price in rupees</p>
+            <p>
+                <!-- <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+                height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+            </svg> -->
+           Rs 2M</p>
+        </div>
+        <div class="border-color">
+            <p class="fs-4 res280">Expected Daily Income</p>
+            <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+                height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+            </svg> 30</p>
+        </div>
+        <div class="border-color">
+            <p class="fs-4 res280">Minimum Bid Price</p>
+            <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+                height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+            </svg> 3000</p>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="bid-val">
+    <span>
+        <h3 id="inccount">+</h3>
+
+    </span> <span id="total-bi" style="color: white;
+    margin: 10px;
+    font-weight: 800;
+    font-size: 23px;"><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px"
+                    height="23px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+                </svg></span> <span>
+    </span> <span id="total-bid">2000</span> <span>
+        <h3 id="deccount">-</h3>
+    </span>
+
+</div>
+<!-- <script>
+    const inccount =document.getElementById('inccount');
+    const dec =document.getElementById('deccount');
+
+    const bid=document.getElementById('total-bid');
+    var count = 0;
+    bid.innerHTML=count
+   
+    inccount=addEventListener('click',function(){
+        count++;
+        bid.innerHTML=count;
+    })
+    dec=addEventListener('click',function(){
+        count--;
+    bid.innerHTML=count;
+    })
+</script> -->
+<div class="  w-100 d-flex justify-content-around nft-opt">
+    <div class="eno " style="width: 130px; line-height: 40px;"><a href="./vids.html">Explore Bid</a></div>
+    <div class="s-mbtn  " style="width: 130px; line-height: 40px;"><a href="./nftpurches.html">Buy NFT</a></div>
+</div>
+
+
+
+</div>
+<div class="container border-color  p-1 " >
+   
+    <div class="w-100 m-auto text-center my-3 " style="background-color: black;">
+        <img src="./images/gifslider4.gif" class=" " alt=""style="    height: 30vh;
+        width: 43vw;" >
+    </div>
+<div class="pophashtags tags d-flex">
+<p>#socisl</p>
+<p>#service</p>
+<p>#goodforgod</p>
+
+</div>
+
+
+
+<div class="revenstu">
+<p class="fs-3 fw-bold ms-3 m-0" >Revenue structure</>
+<div class="dt-reven">
+    <div class="border-color">
+        <p class="fs-4 res280">Price in vids</p>
+        <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+            height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+        </svg> 200</p>
+    </div>
+    <div class="border-color">
+        <p class="fs-4 res280">Price in rupees</p>
+        <p>
+            <!-- <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+            height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+        </svg> -->
+       Rs 2M</p>
+    </div>
+    <div class="border-color">
+        <p class="fs-4 res280">Expected Daily Income</p>
+        <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+            height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+        </svg> 30</p>
+    </div>
+    <div class="border-color">
+        <p class="fs-4 res280">Minimum Bid Price</p>
+        <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+            height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+        </svg> 3000</p>
+    </div>
+
+
+
+</div>
+</div>
+
+<div class="bid-val">
+<span>
+    <h3 id="inccount">+</h3>
+
+</span> <span id="total-bi" style="color: white;
+margin: 10px;
+font-weight: 800;
+font-size: 23px;"><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px"
+                height="23px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+            </svg></span> <span>
+</span> <span id="total-bid">2000</span> <span>
+    <h3 id="deccount">-</h3>
+</span>
+
+</div>
+<!-- <script>
+const inccount =document.getElementById('inccount');
+const dec =document.getElementById('deccount');
+
+const bid=document.getElementById('total-bid');
+var count = 0;
+bid.innerHTML=count
+
+inccount=addEventListener('click',function(){
+    count++;
+    bid.innerHTML=count;
+})
+dec=addEventListener('click',function(){
+    count--;
+bid.innerHTML=count;
+})
+</script> -->
+<div class="  w-100 d-flex justify-content-around nft-opt">
+<div class="eno " style="width: 130px; line-height: 40px;"><a href="./vids.html">Explore Bid</a></div>
+<div class="s-mbtn  " style="width: 130px; line-height: 40px;"><a href="./nftpurches.html">Buy NFT</a></div>
+</div>
+
+
+
+</div>
+<div class="container border-color  p-1 " >
+   
+    <div class="w-100 m-auto text-center my-3 " style="background-color: black;">
+        <img src="./images/gifslider5.webp" class=" " alt=""style="    height: 30vh;
+        width: 43vw;" >
+    </div>
+<div class="pophashtags tags d-flex">
+<p>#socisl</p>
+<p>#service</p>
+<p>#goodforgod</p>
+
+</div>
+
+
+
+<div class="revenstu">
+<p class="fs-3 fw-bold ms-3 m-0" >Revenue structure</>
+<div class="dt-reven">
+    <div class="border-color">
+        <p class="fs-4 res280">Price in vids</p>
+        <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+            height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+        </svg> 200</p>
+    </div>
+    <div class="border-color">
+        <p class="fs-4 res280">Price in rupees</p>
+        <p>
+            <!-- <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+            height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+        </svg> -->
+       Rs 2M</p>
+    </div>
+    <div class="border-color">
+        <p class="fs-4 res280">Expected Daily Income</p>
+        <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+            height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+        </svg> 30</p>
+    </div>
+    <div class="border-color">
+        <p class="fs-4 res280">Minimum Bid Price</p>
+        <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+            height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+        </svg> 3000</p>
+    </div>
+
+
+
+</div>
+</div>
+
+<div class="bid-val">
+<span>
+    <h3 id="inccount">+</h3>
+
+</span> <span id="total-bi" style="color: white;
+margin: 10px;
+font-weight: 800;
+font-size: 23px;"><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px"
+                height="23px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+            </svg></span> <span>
+</span> <span id="total-bid">2000</span> <span>
+    <h3 id="deccount">-</h3>
+</span>
+
+</div>
+<!-- <script>
+const inccount =document.getElementById('inccount');
+const dec =document.getElementById('deccount');
+
+const bid=document.getElementById('total-bid');
+var count = 0;
+bid.innerHTML=count
+
+inccount=addEventListener('click',function(){
+    count++;
+    bid.innerHTML=count;
+})
+dec=addEventListener('click',function(){
+    count--;
+bid.innerHTML=count;
+})
+</script> -->
+<div class="  w-100 d-flex justify-content-around nft-opt">
+<div class="eno " style="width: 130px; line-height: 40px;"><a href="./vids.html">Explore Bid</a></div>
+<div class="s-mbtn  " style="width: 130px; line-height: 40px;"><a href="./nftpurches.html">Buy NFT</a></div>
+</div>
+
+
+
+</div>
+    <!-- ///////////////////user profile///////////////////////////////////////////// -->
+    <div class="user-nav w-100" style=" position: fixed;top: 0px;">
+        <div class="userprofile m-auto">
+            <div class="userimg text-center">
+                <img src="./images/creatore.jpg" alt="">
+                <h5>Purani Dili Takies</h5>
+            </div>
+            <div class="viewbla">
+                <button class="w-50">View Balance</button>
+                <p>IDNFNF839RNVI3094MNGO3</p>
+            </div>
+            <div class="usernavigation mx-5">
+                <ul class="fs-2 fw-bold ">
+                    <li><a href="#">
+                        <!-- <i class="bi bi-sliders"></i>   -->
+                        Settings
+                        </a></li>
+                    <li><a href="#">
+                        <!-- <i class="bi bi-bell"></i>  -->
+                        Notification
+                        </a></li>
+                    <li class="highlight"><a href="#">
+                            <!-- <ion-icon name="desktop-outline"></ion-icon>  -->
+                            Explore NFT's
+                        </a></li>
+                    <li><a href="#">
+                        <p class="pt-2">
+                            <!-- <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="30px"
+                            height="30px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+        c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+        c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+        c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+        c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+        c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+        C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:white;" />
+                        </svg> -->
+                        Find Bids
+                        </a></li>
+                    <li><a href="#">
+                        <!-- <i class="bi bi-info-circle"></i> -->
+                         About 
+                        </a></li>
+                
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="container fixed-bottom bg-dark botnav d-flex justify-content-around">
+        <div>
+            <a href="./index.html">
+                <p><i class="bi bi-house-door-fill fs-1"></i></p>
+            </a>
+        </div>
+        <div>
+            <a href="./explore.html">
+                <p >
+                    <i class="bi bi-disc-fill fs-1"></i>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="./nftdetail.html">
+                <p class=" active pt-2">
+                    <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="30px"
+                    height="30px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#e91e63;" />
+                </svg>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="./oders.html">
+                <p>
+                    <i class="bi bi-collection-play-fill fs-1"></i>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="./profile.html">
+                <p>
+                    <i class="bi bi-person-circle fs-1"></i>
+                </p>
+            </a>
+        </div>
+
+    </div>
+    
+
+   <script src="./script/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+</html>

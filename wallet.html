@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wallet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body class="bg-dark text-white">
+    <div class="d-flex justify-content-between container bg-dark sticky-top">
+        <div class=" m-2 ">
+            <img src="./images/logo_1.png" class="rounded-circle  fix-size" alt="">
+        </div>
+        <div class="text-white fs-1"><i class="bi bi-list menu"></i></div>
+    </div>
+    <div class="mx-4">
+        <p class="fs-4" onclick="history.back()"><i class="bi bi-caret-left-fill"></i>
+            <span class="fs-6"> Back</span> </p>
+        
+    </div>
+    <div class="container my-3">
+        <div class="row ">
+            <div class="col-6 ">
+                <p>Total Balance</p>
+                <p class="h3">Rs <span>2000</span></p>
+            </div>
+            <div class="col-6 text-end ">
+                <button class=" bg-theam-color w-75 rounded  border-0 m-auto my-3  "
+                    style="height:50px; line-height: 50px;">
+                    <a href="./addcash.html">Add Balance</a>
+                </button>
+            </div>
+            <div class="col-11 bg-theam-color d-flex justify-content-around m-auto rounded">
+                <span class="mt-4">
+                    <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="30px"
+                    height="30px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:white;" />
+                </svg>
+                </span>
+                <span>
+                    <p class="m-0 fs-3 fw-bold">
+                        <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="18px"
+                        height="18px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+    c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+    c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+    c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+    c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+    c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+    C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:white;" /></svg> 0.01</p>
+                    <p class="fs-3 fw-bold">Rs 20000</p>
+                </span>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container p-1">
+        <p class="fs-3 fw-bold text-center">My Transactions</p>
+        <div class="d-flex justify-content-around">
+<div class=""> Fillter
+   <select name="fill" class="bg-dark border-1 text-white" id="fill">
+<option value="all">All</option>
+<option value="all">purchased</option>
+<option value="all">On hold</option>
+<option value="all">Received</option>
+<option value="all">Paid</option>
+   </select>
+   
+
+</div>
+<div>Sort by
+    <select name="fill" class="bg-dark border-1 text-white" id="fill">
+        <option value="all">All</option>
+        <option value="all">High to Low</option>
+        <option value="all">A-z</option>
+        
+           </select>
+</div>
+        </div>
+        <div class="d-flex justify-content-around">
+            <span class="itemconatin1 active-border1" data-role="tabs" data-target="#uall">
+                <p class="m-0 mt-3">
+                    All
+                </p>
+            </span>
+            <span class="itemconatin1" data-role="tabs" data-target="#uone">
+                <p class="m-0 mt-3">Vids</p>
+            </span>
+            <span class="itemconatin1" data-role="tabs" data-target="#utwo">
+                <p class="m-0 mt-3">Nft's</p>
+            </span>
+            
+        </div>
+        <div class="container mt-2 p-1">
+
+            <div class="pannelitems1 active-border1" id="uall">
+
+
+                <div class="user-transac p-1">
+                    <div class="paid-to-cre">
+                       <p class="fs-4"><i class="bi bi-wallet2"></i></p>
+                    </div>
+                    <div>
+                        <p class="m-0"> Added to <span>wallet</span></p>
+                        <p class="m-0"><span>Today</span>,<span>09:30 A.M</span></p>
+                        <p class="text-muted m-0">JGENLEFO39DFK...</p>
+        
+                    </div>
+                    <div>
+                        <p class=""><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+                                xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px"
+                                height="20px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+                           c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+                           c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+                           c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+                           c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+                           c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+                           C186.418,319.536,94.431,181.327,0.766,40.597z" style="  fill: white;" /> <span>1000</span> </p>
+                        <span>
+                         
+                            
+        
+                        </span>
+                        <a href="./vidsadd.html"> <button class="m-0  order text-white"> Detail</button></a>
+                    </div>
+                </div>
+                <div class="user-transac my-2 p-1">
+                    <div class="paid-to-cre">
+                        <p class="fs-4"><i class="bi bi-wallet2"></i></p>
+                    </div>
+                    <div>
+                        <p class="m-0"> Participated in bid</p>
+                        <p class="m-0"><span>07/05/22</span>,<span>09:30 A.M</span></p>
+                        <p class="text-muted m-0">JGENLEFO39DFK...</p>
+        
+                    </div>
+                    <div>
+                        <p class=""><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+                                xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px"
+                                height="20px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+                           c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+                           c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+                           c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+                           c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+                           c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+                           C186.418,319.536,94.431,181.327,0.766,40.597z" style="  fill: white;" /> <span>1000</span> </p>
+                        <span>
+                         
+                            
+        
+                        </span>
+                        <a href="./biddetail.html"> <button class="m-0  order text-white"> Detail</button></a>
+                    </div>
+                </div>
+                <div class="user-transac my-2 p-1">
+                    <div class="paid-to-cre">
+                        <p class="fs-4"><i class="bi bi-wallet2"></i></p>
+                    </div>
+                    <div>
+                        <p class="m-0"> Purchase of NFT</p>
+                        <p class="m-0"><span>07/05/22</span>,<span>09:30 A.M</span></p>
+                        <p class="text-muted m-0">JGENLEFO39DFK...</p>
+        
+                    </div>
+                    <div>
+                        <p class=""><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+                                xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px"
+                                height="20px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+                           c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+                           c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+                           c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+                           c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+                           c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+                           C186.418,319.536,94.431,181.327,0.766,40.597z" style="  fill: white;" /> <span>1000</span> </p>
+                        <span>
+                         
+                            
+        
+                        </span>
+                        <a href="./nftorder.html"> <button class="m-0  order text-white"> Detail</button></a>
+                    </div>
+                </div>
+                <div class="user-transac my-2 p-1">
+                    <div class="paid-to-cre">
+                        <p class="fs-4"><i class="bi bi-wallet2"></i></p>
+                    </div>
+                    <div>
+                        <p class="m-0"> Bid amount reversal</p>
+                        <p class="m-0"><span>07/05/22</span>,<span>09:30 A.M</span></p>
+                        <p class="text-muted m-0">JGENLEFO39DFK...</p>
+        
+                    </div>
+                    <div>
+                        <p class="">- <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;"
+                                xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px"
+                                height="20px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+                           c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+                           c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+                           c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+                           c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+                           c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+                           C186.418,319.536,94.431,181.327,0.766,40.597z" style="  fill: white;" /> <span>1000</span> </p>
+                        <span>
+                         
+                            
+        
+                        </span>
+                        <a href="#"> <button class="m-0  order text-white"> Detail</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pannelitems1  " id="uone">
+
+
+                <div class=" row  p-1  " style="  height: 166px;  border: 1px solid rgb(67, 67, 67);">
+                    <div class="col-6 p-0 ">
+                        <div class="overflow-hidden  tags" style="height: 103px;">
+                            <div class="position-relative">
+                                <img src="./thumbs links/6/6.jpeg" width="100%" height="100px" alt="">
+
+                                <div class="position-absolute position"  >
+                                    <p>05: 00</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6 p-2 ">
+                        <div class="d-flex">
+                            <span>
+                                <p class=" m-0 "><img src="./images/VIDS BNW-01.svg" height="15px" alt="">
+                                    <span>1000 vids</span>
+                                </p>
+                            </span>
+                            
+                        </div>
+
+                        <p class="text-muted text-start m-0">12/05/2022</p>
+                        <p class="text-danger m-0"> this order is vlaid til 12/06/2022</p>
+                    </div>
+                    <div class="col-6 ">
+                        <p class="m-0 ">Tittle of video you purches</p>
+
+                    </div>
+                    <div class="col-6">
+                        <button class="m-0  order text-white"> Detail</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="pannelitems1 " id="utwo">
+
+
+                <div class=" row  p-1  " style="  height: 166px;  border: 1px solid rgb(67, 67, 67);">
+                    <div class="col-6 p-0 ">
+                        <div class="overflow-hidden  tags" style="height: 103px;">
+                            <div class="position-relative">
+                                <img src="./images/gifslider.gif" width="100%" height="100px" alt="">
+
+                                <!-- <div class="position-absolute position"  >
+                                    <p>05: 00</p>
+                                </div> -->
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6 p-2 ">
+                        <div class="d-flex">
+                            <span>
+                                <p class=" m-0 "><img src="./images/VIDS BNW-01.svg" height="15px" alt="">
+                                    <span>1000 vids</span>
+                                </p>
+                            </span>
+                            <!-- <span>
+                                <p class=" m-0">Rs <span>15000</span></p>
+                            </span> -->
+                        </div>
+
+                        <p class="text-muted text-start m-0">12/05/2022</p>
+                        <p class="text-danger m-0"> this order is vlaid til 12/06/2022</p>
+                    </div>
+                    <div class="col-6 ">
+                        <p class="m-0 ">Tittle of video you purchased</p>
+
+                    </div>
+                    <div class="col-6">
+                        <button class="m-0  order text-white"> Detail</button>
+                    </div>
+
+
+                </div>
+            </div>
+           
+
+            
+        </div>
+    </div>
+    <script>
+         const deatail = document.querySelectorAll('[data-role="tabs"]'),
+            tabContent = document.querySelectorAll(".pannelitems1");
+
+        deatail.forEach((tabs) => {
+            tabs.addEventListener("click", () => {
+                const targets = document.querySelector(tabs.dataset.target);
+
+                tabContent.forEach((tc) => {
+                    tc.classList.remove("active-border1");
+                });
+                targets.classList.add("active-border1");
+
+                deatail.forEach((t) => {
+                    t.classList.remove("active-border1");
+                });
+                tabs.classList.add("active-border1");
+            });
+        });
+    </script>
+    <div class="user-nav w-100" style=" position: fixed;top: 0px;">
+        <div class="userprofile m-auto">
+            <div class="userimg text-center">
+                <img src="./images/creatore.jpg" alt="">
+                <h5>Purani Dili Talkies</h5>
+            </div>
+            <div class="viewbla">
+                <button class="w-50">View Balance</button>
+                <p>IDNFNF839RNVI3094MNGO3</p>
+            </div>
+            <div class="usernavigation mx-5">
+                <ul class="fs-2 fw-bold ">
+                    <li><a href="#">
+                        <!-- <i class="bi bi-sliders"></i>   -->
+                        Settings
+                        </a></li>
+                    <li><a href="#">
+                        <!-- <i class="bi bi-bell"></i>  -->
+                        Notification
+                        </a></li>
+                    <li class="highlight"><a href="#">
+                            <!-- <ion-icon name="desktop-outline"></ion-icon>  -->
+                            Explore NFT's
+                        </a></li>
+                    <li><a href="#">
+                        <p class="pt-2">
+                            <!-- <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="30px"
+                            height="30px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+        c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+        c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+        c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+        c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+        c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+        C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:white;" />
+                        </svg> -->
+                        Find Bids
+                        </a></li>
+                    <li><a href="#">
+                        <!-- <i class="bi bi-info-circle"></i> -->
+                         About 
+                        </a></li>
+                
+                </ul>
+            </div>
+
+        </div>
+    </div> 
+    <script src="./script/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>

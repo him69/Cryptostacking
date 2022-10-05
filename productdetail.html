@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .iteam {
+            display: none;
+        }
+
+        .iteam.active-border {
+            display: block;
+        }
+
+        .before::after {
+            content: "|";
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white">
+    <div class="d-flex  justify-content-between container bg-dark sticky-top">
+        <div class=" m-2 ">
+            <img src="./images/logo_1.png" class="rounded-circle  fix-size" alt="">
+        </div>
+        <div class="text-white fs-1 "><i class="bi bi-list menu"></i></div>
+    </div>
+    <!-- <div class="mx-4">
+        <p class="fs-4" onclick="history.back()"><i class="bi bi-caret-left-fill"></i>
+            <span class="fs-6"> Back</span>
+        </p>
+
+    </div> -->
+
+    <div class="container">
+        <div class="d-flex sticky-top bg-dark " style="top: 8%;" >
+
+            <div class=" itemconatin  active-border w-50" data-role="tab" data-target="#one">
+                <p class="text-center">Vids</p>
+            </div>
+            <div style="    transform: rotate(318deg);">
+                <i class="bi bi-slash-lg fs-1"></i>
+            </div>
+            <div class=" itemconatin  w-50" data-role="tab" data-target="#second">
+                <p class="text-center">NFT's</p>
+            </div>
+
+        </div>
+        <div class="item-content ">
+            <div class="iteam active-border " id="one">
+               
+        
+                  
+                <div class="container p-0">
+
+                    <div class="p-2 vids-he ">
+            
+                        <!-- <img src="./thumbs links/5/5.jpeg" width="100%" alt=""> -->
+                       
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/5BaAVhsttXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="fw-bold fs-5 "> The corrupt head serves wrong...</p></a>
+                        <div class="d-flex justify-content-between   bg-dark ">
+                            <div class="">
+                                <p class="m-0 fs-6"><i class="bi bi-clock-fill"></i> 6 month ago</p>
+                                <p class="m-0"><i class="bi bi-eye-fill"></i> 6.5 M</p>
+                            </div>
+                            <div class="fs-2 fw-bold">
+                                <span>00:</span>
+                                <span>00:</span>
+                                <span>00:</span>
+                                <span class="text-danger">34</span>
+            
+                            </div>
+                        </div>
+            
+            
+                    </div>
+            
+            
+                    <div class="container border-bottom d-flex justify-content-around">
+                        <div>
+                            <p class="mt-3 m-0  itemconatin active-border" data-role="tab1" data-target="#dec">
+                                Description
+                            </p>
+                        </div>
+                        <div>
+                            <p class="mt-3 m-0 itemconatin" data-role="tab1" data-target="#per">
+                                Performance
+                            </p>
+                        </div>
+                        <div>
+                            <p class="mt-3 m-0 itemconatin" data-role="tab1" data-target="#bid">
+                                Bidder
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container border-bottom p-2">
+                        <div>
+                            <p class="pannelitems active-border" id="dec">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A esse magni aliquid neque ex accusamus aut
+                                eligendi ut nemo cumque. Harum quos labore et rerum voluptatem nemo id autem error?
+                            </p>
+                        </div>
+                        <div>
+                            <div class=" pannelitems " id="per">
+                                <div class="d-flex anylitics p-2 ">
+                                    <div class="left-div ">
+                                        <div class="views-det">Total Views</div>
+                                        <div class="views-det">minute Views</div>
+                                        <div class="views-det v-more" id="v-more">Video Engagement</div>
+                                        <div class="views-det v-more" id="v-more">3 Second Views</div>
+                                        <div class="views-det v-more" id="v-more">15 Second Views</div>
+                                        <div class="views-det v-more" id="v-more">1 Minute Views</div>
+            
+                                    </div>
+                                    <div class="right-div w-25">
+                                        <div class="numeric-det">100M</div>
+                                        <div class="numeric-det">224k</div>
+                                        <div class="numeric-det v-more" id="v-more">70%</div>
+                                        <div class="numeric-det v-more" id="v-more">50k</div>
+                                        <div class="numeric-det v-more" id="v-more">111k</div>
+                                        <div class="numeric-det v-more" id="v-more">196k</div>
+                                    </div>
+                                </div>
+            
+            
+            
+            
+                            </div>
+                        </div>
+                        <div class="container  pannelitems p-0" id="bid">
+                            <ul class="list-group list-group-flush p-0" style="list-style: none; ">
+                                <li>
+                                    <ul class=" d-flex justify-content-between p-0 border-bottom" style="list-style: none;">
+            
+                                        <li>profile</li>
+                                        <li>Bidders</li>
+                                        <li> Tenure</li>
+                                        <li>Last Bid</li>
+                                    </ul>
+                                </li>
+                                <li class="overflow">
+                                    <ul class=" d-flex justify-content-around text-center p-0 pt-2 border-bottom"
+                                        style="list-style: none;">
+            
+                                        <li>
+                                            <img src="./images/creatore.jpg" class="profile rounded-circle" alt="">
+                                        </li>
+                                        <li>
+                                            <p class=" m-0"> himanshu</p>
+                                            <p class="text-muted">11/05/22,16:48</p>
+                                        </li>
+                                        <li style="width:100px ;">3month</li>
+                                        <li>1225/-</li>
+                                    </ul>
+                                    <ul class=" d-flex justify-content-around text-center p-0 pt-2 border-bottom"
+                                        style="list-style: none;">
+            
+                                        <li>
+                                            <img src="./images/creatore.jpg" class="profile rounded-circle" alt="">
+                                        </li>
+                                        <li>
+                                            <p class=" m-0"> himanshu</p>
+                                            <p class="text-muted">11/05/22,16:48</p>
+                                        </li>
+                                        <li style="width:100px ;">6month</li>
+                                        <li>12625/-</li>
+                                    </ul>
+                                    <ul class=" d-flex justify-content-around text-center p-0 pt-2 border-bottom"
+                                        style="list-style: none;">
+            
+                                        <li>
+                                            <img src="./images/creatore.jpg" class="profile rounded-circle" alt="">
+                                        </li>
+                                        <li>
+                                            <p class=" m-0"> himanshu</p>
+                                            <p class="text-muted">11/05/22,16:48</p>
+                                        </li>
+                                        <li style="width:100px ;">12month</li>
+                                        <li>19025/-</li>
+                                    </ul>
+                                    <ul class=" d-flex justify-content-around text-center p-0 pt-2 border-bottom"
+                                        style="list-style: none;">
+            
+                                        <li>
+                                            <img src="./images/creatore.jpg" class="profile rounded-circle" alt="">
+                                        </li>
+                                        <li>
+                                            <p class=" m-0"> kirshana</p>
+                                            <p class="text-muted">11/05/22,16:48</p>
+                                        </li>
+                                        <li style="width:100px ;">12month</li>
+                                        <li>19025/-</li>
+                                    </ul>
+                                    <ul class=" d-flex justify-content-around text-center p-0 pt-2 border-bottom"
+                                        style="list-style: none;">
+            
+                                        <li>
+                                            <img src="./images/creatore.jpg" class="profile rounded-circle" alt="">
+                                        </li>
+                                        <li>
+                                            <p class=" m-0">nandani</p>
+                                            <p class="text-muted">11/05/22,16:48</p>
+                                        </li>
+                                        <li style="width:100px ;">12month</li>
+                                        <li>19025/-</li>
+                                    </ul>
+                                </li>
+                            </ul>
+            
+                        </div>
+                    </div>
+            
+            
+                    <script>
+                        const tabs = document.querySelectorAll('[data-role="tab1"]'),
+                            tabContents = document.querySelectorAll(".pannelitems");
+            
+            
+                        tabs.forEach((tab) => {
+                            tab.addEventListener("click", () => {
+                                const target = document.querySelector(tab.dataset.target);
+            
+                                tabContents.forEach((tc) => {
+                                    tc.classList.remove("active-border");
+                                });
+                                target.classList.add("active-border");
+            
+                                tabs.forEach((t) => {
+                                    t.classList.remove("active-border");
+                                });
+                                tab.classList.add("active-border");
+                            });
+                        });
+                    </script>
+                    <div class="d-flex justify-content-around my-2">
+                        <div class=" current mont " data-role="bid" data-target="#onemon">
+                            <p>1 Mth</p>
+                        </div>
+                        <div class="current" data-role="bid" data-target="#thrmon">
+                            <p>3 Mth</p>
+                        </div>
+                        <div class=" current " data-role="bid" data-target="#sixmon">
+                            <p>
+                                6 Mth
+                            </p>
+                        </div>
+                        <div class=" current " data-role="bid" data-target="#twelmon">
+                            <p>
+                                12 Mth
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="bid active-bid" id="onemon">
+                            <span class="fs-1 theam-text"> -</span>
+                            <span class="btn btn-outline-secondary m-1 text-white fw-bold">
+                                $ <span>2000</span>
+                            </span>
+                            <span class="fs-1 theam-text m-1"> +</span>
+                            <p>Min.Bid : $ 1350</p>
+                            <div class=" bg-background w-50 rounded m-auto my-3  " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" style="height:50px; line-height: 50px;">
+                                Bid Now
+                            </div>
+            
+                        </div>
+                        <div class="bid " id="thrmon">
+                            <span class="fs-1 theam-text"> -</span>
+                            <span class="btn btn-outline-secondary m-1 text-white fw-bold">
+                                $ <span>6000</span>
+                            </span>
+                            <span class="fs-1 theam-text m-1"> +</span>
+                            <p>Min.Bid : $ 4050</p>
+                            <div class=" bg-background w-50 rounded m-auto my-3  " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" style="height:50px; line-height: 50px;">
+                                Bid Now
+                            </div>
+            
+                        </div>
+                        <div class="bid " id="sixmon">
+                            <span class="fs-1 theam-text"> -</span>
+                            <span class="btn btn-outline-secondary m-1 text-white fw-bold">
+                                $ <span>12000</span>
+                            </span>
+                            <span class="fs-1 theam-text m-1"> +</span>
+                            <p>Min.Bid : $ 8100</p>
+                            <div class=" bg-background w-50 rounded m-auto my-3  " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" style="height:50px; line-height: 50px;">
+                                Bid Now
+                            </div>
+            
+                        </div>
+                        <div class="bid " id="twelmon">
+                            <span class="fs-1 theam-text"> -</span>
+                            <span class="btn btn-outline-secondary m-1 text-white fw-bold">
+                                $ <span>24000</span>
+                            </span>
+                            <span class="fs-1 theam-text m-1"> +</span>
+                            <p>Min.Bid : $ 16200</p>
+                            <div class="  bg-background w-50 rounded m-auto my-3  " style="height:50px; line-height: 50px;"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Bid Now
+                            </div>
+            
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="s-mbtn w-75 text-center m-auto  " style=" line-height: 40px;"><a href="./nftdetail.html">Buy NFT</a>
+                </div>
+                <div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+            
+            
+            
+            
+            
+            
+                            <div class=" text-center m-auto w-100 bg-dark rounded border-color"
+                                style="position: absolute; top: 50vh;">
+                                <p class="text-end fs-2"><button type="button" class="cloebtn" data-bs-dismiss="modal"
+                                        aria-label="Close">X</button></p>
+                                <p class="fs-3 m-0">Connect to Your Wallet</p>
+                                <p>purches VIDSCOIN to continue Purchase</p>
+                                <img src="./images/logo_1.png" class="fix-size" alt="">
+            
+                                <button class=" bg-theam-color w-75 rounded  border-0  my-3  "
+                                    style="height:50px; line-height: 50px;">
+                                    <a href="#">Connect Wallet</a>
+                                </button>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <p class="fs-6 mt-2 text-center"><i class="bi bi-bookmark-heart"></i> Add to wishlist</p>
+                </div>
+            
+                
+            </div>
+            <div class="iteam mt-4 " id="second">
+                <div class="container border-color  p-1 " >
+   
+                    <div class="w-100 m-auto text-center my-3 " style="background-color: black;">
+                        <img src="./images/Fury.gif" class=" " alt=""style="    height: 30vh;
+                        width: 43vw;" >
+                    </div>
+            <div class="pophashtags tags d-flex">
+                <p>#socisl</p>
+                <p>#service</p>
+                <p>#goodforgod</p>
+                
+            </div>
+            
+                
+        
+            <div class="revenstu">
+                <p class="fs-3 fw-bold ms-3 m-0" >Revenue structure</>
+                <div class="dt-reven">
+                    <div class="border-color">
+                        <p class="fs-4 res280">Price in vids</p>
+                        <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+                            height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+        c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+        c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+        c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+        c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+        c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+        C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+                        </svg> 200</p>
+                    </div>
+                    <div class="border-color">
+                        <p class="fs-4 res280">Price in rupees</p>
+                        <p>
+                            <!-- <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+                            height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+        c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+        c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+        c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+        c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+        c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+        C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+                        </svg> -->
+                       Rs 2M</p>
+                    </div>
+                    <div class="border-color">
+                        <p class="fs-4 res280">Expected Daily Income</p>
+                        <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+                            height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+        c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+        c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+        c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+        c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+        c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+        C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+                        </svg> 30</p>
+                    </div>
+                    <div class="border-color">
+                        <p class="fs-4 res280">Minimum Bid Price</p>
+                        <p><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px"
+                            height="15px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+        c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+        c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+        c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+        c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+        c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+        C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+                        </svg> 3000</p>
+                    </div>
+        
+        
+        
+                </div>
+            </div>
+        
+            <div class="bid-val">
+                <span>
+                    <h3 id="inccount">+</h3>
+        
+                </span> <span id="total-bi" style="color: white;
+                margin: 10px;
+                font-weight: 800;
+                font-size: 23px;"><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px"
+                                height="23px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+            c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+            c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+            c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+            c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+            c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+            C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#fefcfc;" />
+                            </svg></span> <span>
+                </span> <span id="total-bid">2000</span> <span>
+                    <h3 id="deccount">-</h3>
+                </span>
+        
+            </div>
+            <!-- <script>
+                const inccount =document.getElementById('inccount');
+                const dec =document.getElementById('deccount');
+        
+                const bid=document.getElementById('total-bid');
+                var count = 0;
+                bid.innerHTML=count
+               
+                inccount=addEventListener('click',function(){
+                    count++;
+                    bid.innerHTML=count;
+                })
+                dec=addEventListener('click',function(){
+                    count--;
+                bid.innerHTML=count;
+                })
+            </script> -->
+            <div class="  w-100 d-flex justify-content-around nft-opt">
+                <div class="eno " style="width: 130px; line-height: 40px;"><a href="./vids.html">Explore Bid</a></div>
+                <div class="s-mbtn  " style="width: 130px; line-height: 40px;"><a href="./nftpurches.html">Buy NFT</a></div>
+            </div>
+            
+            
+        
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const switchtab = document.querySelectorAll('[data-role="tab"]'),
+            content = document.querySelectorAll(".iteam");
+
+
+        switchtab.forEach((tab) => {
+            tab.addEventListener("click", () => {
+                const tar = document.querySelector(tab.dataset.target);
+
+                content.forEach((tc) => {
+                    tc.classList.remove("active-border");
+                });
+                tar.classList.add("active-border");
+
+                switchtab.forEach((t) => {
+                    t.classList.remove("active-border");
+                });
+                tab.classList.add("active-border");
+            });
+        });
+
+    </script>
+    <script>
+        const cbid = document.querySelectorAll('[data-role="bid"]'),
+            bidvalue = document.querySelectorAll(".bid");
+
+
+        cbid.forEach((bid) => {
+            bid.addEventListener("click", () => {
+                const target = document.querySelector(bid.dataset.target);
+
+                bidvalue.forEach((tc) => {
+                    tc.classList.remove("active-bid");
+                });
+                target.classList.add("active-bid");
+
+                cbid.forEach((t) => {
+                    t.classList.remove("mont");
+                });
+                bid.classList.add("mont");
+            });
+        });
+    </script>
+    <div class="user-nav w-100" style=" position: fixed;top: 0px;">
+        <div class="userprofile m-auto">
+            <div class="userimg text-center">
+                <img src="./images/creatore.jpg" alt="">
+                <h5>Purani Dili Talkies</h5>
+            </div>
+            <div class="viewbla">
+                <button class="w-50">View Balance</button>
+                <p>IDNFNF839RNVI3094MNGO3</p>
+            </div>
+            <div class="usernavigation mx-5">
+                <ul class="fs-2 fw-bold ">
+                    <li><a href="#">
+                            <!-- <i class="bi bi-sliders"></i>   -->
+                            Settings
+                        </a></li>
+                    <li><a href="#">
+                            <!-- <i class="bi bi-bell"></i>  -->
+                            Notification
+                        </a></li>
+                    <li class="highlight"><a href="#">
+                            <!-- <ion-icon name="desktop-outline"></ion-icon>  -->
+                            Explore NFT's
+                        </a></li>
+                    <li><a href="#">
+                            <p class="pt-2">
+                                <!-- <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="30px"
+                            height="30px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+        c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+        c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+        c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+        c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+        c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+        C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:white;" />
+                        </svg> -->
+                                Find Bids
+                        </a></li>
+                    <li><a href="#">
+                            <!-- <i class="bi bi-info-circle"></i> -->
+                            About
+                        </a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- bottam navigation -->
+ <div class="container fixed-bottom bg-dark botnav d-flex justify-content-around"> 
+        <div>
+            <a href="./index.html">
+                <p ><i class="bi bi-house-door-fill fs-1"></i></p>
+            </a>
+        </div>
+        <div>
+            <a href="./explore.html">
+                <p>
+                    <i class="bi bi-disc-fill fs-1"></i>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="./nftdetail.html">
+                <p class="pt-2">
+                    <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="30px"
+                    height="30px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.766,40.597c37.875,0,73.169-0.216,108.452,0.331
+c3.605,0.054,8.293,4.007,10.515,7.289c31.111,45.954,61.888,92.101,92.728,138.211c22.296,33.334,44.566,66.688,67.688,101.287
+c35.456-53.243,70.479-105.831,107.339-161.18c-11.557,0-20.666,0-29.774,0c-21.949,0-43.904-0.284-65.848,0.135
+c-9.07,0.176-15.322-1.213-20.423-9.601c-15.258-25.076-31.809-49.474-48.913-75.763c6.196-0.306,10.413-0.693,14.635-0.696
+c64.851-0.038,129.703,0.141,194.554-0.203c10.013-0.054,16.013,2.464,21.306,10.931c14.434,23.072,30.584,45.221,45.173,68.217
+c2.062,3.251,0.793,10.075-1.614,13.736c-58.823,89.593-117.956,179.013-177.187,268.376c-12.214,18.428-25.037,36.513-39.76,57.927
+C186.418,319.536,94.431,181.327,0.766,40.597z" style="fill:#e91e63;" />
+                </svg>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="./oders.html">
+                <p>
+                    <i class="bi bi-collection-play-fill fs-1"></i>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="./profile.html">
+                <p>
+                    <i class="bi bi-person-circle fs-1"></i>
+                </p>
+            </a>
+        </div>
+
+    </div> 
+
+    <script src="./script/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
